@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: usnau1ko6-go-gitops
+  description: This is GitOps manifest for usnau1ko6-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: usnau1ko6-go
+    janus-idp.io/tekton: usnau1ko6-go 
+    backstage.io/kubernetes-id: usnau1ko6-go 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:usnau1ko6-go

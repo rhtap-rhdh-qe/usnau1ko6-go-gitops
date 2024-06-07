@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: usnau1ko6-go-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/usnau1ko6-go-gitops
